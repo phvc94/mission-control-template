@@ -1,0 +1,109 @@
+MISSION CONTROL LICENSE — FREE PERSONAL AND INTERNAL USE
+Version 1.0 — November 13, 2026
+
+Copyright (c) 2026 Pedro, owner of the GitHub account phvc94.
+This license covers the original code of the Mission Control Template published at
+https://github.com/phvc94/mission-control-template.
+
+1. Scope and definitions
+
+"Software" means the original code and documentation of this template, including
+copies and adaptations that incorporate that material. Third-party components
+remain subject to their respective licenses, as listed in THIRD_PARTY_NOTICES.md.
+
+"Personal Use" means using the Software for a natural person's own activities,
+without commercializing the Software or services directly based on it.
+
+"Internal Use" means use of the Software by a person or organization to
+manage its own activities, agents, projects and information, without
+offering it as a product or service to customers or other third parties. A
+company's internal use is free of charge, even if the company is for-profit.
+
+"Commercialization" means commercially exploiting the Software, or copies or
+adaptations of it, through sale, resale, licensing, subscription, paid access,
+offering as a hosted service, or integration into a commercial product for third
+parties. It also includes charging third parties for deployment, customization,
+operation, maintenance or support specifically related to this Software.
+
+Revenue from one's own activities that merely use the Software as an internal
+tool does not constitute Commercialization. Payment for generic infrastructure,
+such as computing or storage used for one's own internal installation, does not
+turn that use into Commercialization of the Software.
+
+2. Free permissions
+
+A free, non-exclusive license is granted to download, copy, install, run,
+study and modify the Software for Personal Use and Internal Use.
+
+It is also permitted to share the Software or adaptations free of charge for
+those same purposes, including by fork or through GitHub's template feature,
+provided that this license and the authorship notices are preserved and that
+the distribution does not grant broader rights over the code licensed here.
+
+These permissions do not require payment, commission, registration or individual
+authorization. Modifications used only internally do not need to be published.
+The permissions also allow evaluating the Software for a possible commercial
+engagement, without starting its Commercialization.
+
+3. Commercialization only by prior agreement
+
+This free license does not authorize Commercialization.
+Before starting any Commercialization, written authorization from the copyright
+holder must be obtained through a specific commercial agreement.
+
+That agreement shall set out the copyright holder's compensation, such as a
+commission, a revenue share or another form of payment expressly agreed, as
+well as the calculation basis, the services or products covered, the time
+periods and the conditions for assessment and payment.
+
+No percentage, price or Commercialization right is granted or set
+automatically by this license. The public availability of the code, the
+creation of a copy or the retention of credits does not replace the agreement.
+
+The fact that a customer's internal use is free of charge does not authorize a
+supplier to charge for deployment or for other services specific to this
+Software without an agreement. Commercial offerings of modified or rebranded
+versions also require the agreement when they incorporate the original code
+licensed here.
+
+4. Preservation of notices and limits
+
+Keep this license and the authorship notices in copies and distributions.
+Indicate significant changes so that an adaptation is not presented as an
+official version of the project. This license does not authorize using the
+copyright holder's name to suggest endorsement, partnership or commercial
+approval.
+
+The rights of the respective authors in their modifications are preserved;
+they cannot remove the conditions applicable to the original code.
+Third-party components do not become subject to the commercial restrictions
+of this license by being included in the template.
+
+The data, documents, agents, configurations and credentials of each installation
+belong to their respective owners. This license does not grant the copyright
+holder access to that data or a share of the revenue from activities that
+merely use the Software internally.
+
+5. Warranties and liability
+
+The Software is provided "as is", without any promise of support, updates,
+uninterrupted operation or fitness for a particular purpose.
+The user is responsible for their installation, security, backups and
+compliance with the obligations applicable to their use.
+
+To the extent permitted by applicable law, the copyright holder provides no
+warranties and is not liable for damages arising from the use of, or the
+inability to use, the Software. Rights and liabilities that the law does not
+allow to be excluded remain preserved.
+
+6. Reserved rights and contact
+
+Rights not expressly granted remain reserved to the copyright holder.
+Nothing in this license restricts rights that do not depend on the copyright
+holder's authorization, or rights applicable to the use of the GitHub platform
+under its own terms.
+
+To request a commercial agreement, see COMMERCIAL.md.
+This is a custom license with a commercial restriction; it is not the MIT
+License, the GPL, or an open source license approved by the Open Source
+Initiative.

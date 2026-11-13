@@ -1,0 +1,46 @@
+# Mission Control for OpenClaw.
+#   cp .env.example .env    # fill in MC_ACCESS_TOKEN and MC_GATEWAY_TOKEN
+#   docker compose up -d --build
+# Then open http://127.0.0.1:4318 on this machine. The port is published on the host loopback only;
+# to reach the dashboard from other devices, put an HTTPS reverse proxy in front (docs/INSTALL.md).
+services:
+  mission-control:
+    build: .
+    image: mission-control:local
+    init: true
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      # Fixed for the container; everything else comes from .env.
+      MC_HOST: 0.0.0.0
+      MC_PORT: ${MC_PORT:-4318}
+      MC_STATE_DIR: /state
+      MC_WORKSPACE: ${MC_WORKSPACE_DIR:+/workspace}
+      # In a container the dashboard always needs a sign-in mode. MC_AUTH=none is accepted only with
+      # MC_ALLOW_UNAUTHENTICATED_BIND=1, and only because the port below stays on 127.0.0.1.
+      MC_AUTH: ${MC_AUTH:-token}
+      # host.docker.internal reaches a Gateway on this machine; ws:// to that name (or to a Docker
+      # service name) needs MC_GATEWAY_ALLOW_PRIVATE_WS=1. Set it to 0 if the Gateway is remote (use wss://).
+      MC_GATEWAY_URL: ${MC_GATEWAY_URL:-ws://host.docker.internal:18789}
+      MC_GATEWAY_ALLOW_PRIVATE_WS: ${MC_GATEWAY_ALLOW_PRIVATE_WS:-1}
+      TZ: ${TZ:-UTC}
+    ports:
+      - "127.0.0.1:${MC_PORT:-4318}:${MC_PORT:-4318}"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - state:/state
+      # Your Markdown/Git workspace (MC_WORKSPACE_DIR in .env: an absolute path, or one starting with ./).
+      # Without it an empty placeholder volume is mounted and the dashboard runs without a workspace.
+      - ${MC_WORKSPACE_DIR:-workspace-placeholder}:/workspace
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  state:
+  workspace-placeholder:

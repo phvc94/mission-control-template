@@ -1,0 +1,18 @@
+{
+  "name": "mission-control-template",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.19.0"
+  },
+  "scripts": {
+    "start": "node --experimental-strip-types server/main.mjs",
+    "test": "node --experimental-strip-types --test test/*.test.mjs server/*.test.mjs",
+    "demo": "node --experimental-strip-types demo/start.mjs"
+  },
+  "dependencies": {
+    "yaml": "2.9.1"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}
